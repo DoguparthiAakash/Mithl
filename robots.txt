@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://doguparthiaakash.github.io/Mithl/sitemap.xml
