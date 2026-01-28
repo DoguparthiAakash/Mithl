@@ -1,254 +1,276 @@
-# Mithl-OS Website
+# Mithl-OS
+![Mithl-OS Logo](OSLogo.png)
+> **The Modern Operating System for Creators**
 
-> **Official project website for Mithl-OS - The Modern OS for Creators**
-
-This directory contains the static website files for the Mithl-OS project, showcasing the operating system's features, vision, and contribution guidelines.
-
----
-
-## 📁 File Structure
-
-```
-web/
-├── index.html              # Homepage - Main landing page
-├── features.html           # Features page - Detailed feature showcase
-├── contribute.html         # Contribution page - Guidelines for contributors
-├── style.css              # Main stylesheet - Unified design system
-├── googlee42c15053e106686.html  # Google Search Console verification
-└── README.md              # This file
-```
+![Fast. Beautiful. Yours.](https://img.shields.io/badge/Status-Active%20Development-00d4ff?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Open%20Source-ffeb3b?style=for-the-badge)
 
 ---
 
-## 🎨 Design System
+## 🚀 What is Mithl-OS?
 
-The website uses the **Glass Prism** design language, featuring:
+**Mithl-OS** is a high-performance, independent operating system built from scratch with a singular vision: **Speed, Aesthetics, and Control**. Unlike traditional operating systems that carry decades of legacy code, Mithl-OS is designed from the ground up to be your reliable daily driver for creative work and development.
 
-- **Modern Glassmorphism**: Transparent, frosted glass effects with subtle blur
-- **Vibrant Color Palette**: 
-  - Primary: `#00d4ff` (Cyan)
-  - Accent: `#ffeb3b` (Yellow)
-  - Background: Dark gradient (`#0a0e27` to `#1a1f3a`)
-- **Typography**: Inter font family (Google Fonts)
-- **Responsive Design**: Mobile-friendly layouts with smooth transitions
-- **Micro-animations**: Hover effects and interactive elements
+We believe an operating system should be **invisible**—it should get out of your way, boot instantly, run efficiently, and provide a distraction-free environment for you to build *your* projects.
 
 ---
 
-## 🚀 Pages Overview
+## ⚡ Core Philosophy
 
-### 1. **index.html** - Homepage
-The main landing page featuring:
-- Hero section with tagline: "Fast. Beautiful. Yours."
-- Three key value propositions:
-  - ⚡ Direct-to-Metal performance
-  - 🎨 Glass Prism UI
-  - 🛡️ Rock Solid stability
-- Latest updates section showcasing v0.5 release and upcoming features
+### Performance First
+- **Direct-to-Metal Graphics**: Custom graphics pipeline that renders directly to the framebuffer for zero input lag
+- **Optimized Memory Management**: Rewritten memory scheduler that reduces fragmentation by 40%
+- **Instant Boot**: Optimized boot sequence that launches directly into the graphical environment
+- **Zero Bloat**: No background telemetry, no unnecessary services, just pure performance
 
-### 2. **features.html** - Features Page
-Detailed showcase of Mithl-OS capabilities:
-- Performance features (instant boot, direct hardware access)
-- Developer tools (GCC/Make support, POSIX compatibility)
-- Visual design (Glass Prism UI, distraction-free workspace)
-- Future roadmap (Project Curiosity, advanced window tiling)
+### Rock Solid Stability
+- **Micro-kernel Inspired Architecture**: Isolates drivers for maximum uptime and system stability
+- **Robust Process Management**: Advanced scheduling and memory management for smooth multitasking
+- **Crash Isolation**: System-critical components are protected from application failures
 
-### 3. **contribute.html** - Contribution Guidelines
-Information for potential contributors:
-- How to get started
-- Contribution areas (kernel development, UI/UX, documentation)
-- Community guidelines
-- Links to GitHub repository
-
----
-
-## 🛠️ Local Development
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Optional: A local web server for testing
-
-### Running Locally
-
-**Option 1: Direct File Access**
-Simply open `index.html` in your web browser:
-```bash
-# From the web directory
-open index.html
-# or
-xdg-open index.html  # Linux
-```
-
-**Option 2: Local Web Server (Recommended)**
-Using Python's built-in HTTP server:
-```bash
-# Python 3
-python3 -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-
-Then navigate to `http://localhost:8000` in your browser.
-
-**Option 3: Using Node.js**
-```bash
-# Install http-server globally
-npm install -g http-server
-
-# Run server
-http-server -p 8000
-```
-
----
-
-## 🌐 Deployment
-
-The website is designed to be deployed as a static site and is compatible with:
-
-- **GitHub Pages** (currently deployed)
-- **Netlify**
-- **Vercel**
-- **AWS S3 + CloudFront**
-- Any static hosting service
-
-### GitHub Pages Deployment
-The site is automatically deployed from the repository. To update:
-1. Make changes to the HTML/CSS files
-2. Commit and push to the main branch
-3. GitHub Pages will automatically rebuild and deploy
+### Beautiful by Design
+- **Glass Prism UI**: A cohesive, glassmorphic design language that looks stunning on any display
+- **Distraction-Free Workspace**: No notifications, no ads, no interruptions—just your work
+- **Consistent Design System**: Every element follows the same visual language for a unified experience
 
 ---
 
 ## 🎯 Key Features
 
-### Responsive Design
-- Mobile-first approach
-- Breakpoints for tablets and desktops
-- Touch-friendly navigation
+### 🖥️ Custom Kernel
+Built from scratch in C with performance-critical components optimized in assembly:
+- **Custom Memory Manager**: Efficient allocation and deallocation with minimal fragmentation
+- **Advanced Scheduler**: Fair scheduling with support for real-time tasks
+- **Virtual File System (VFS)**: Unified interface for multiple filesystem types (FAT32, MNFS, RamFS)
+- **Hardware Abstraction Layer**: Clean separation between hardware and software
 
-### SEO Optimized
-- Semantic HTML5 structure
-- Meta tags for social sharing
-- Descriptive titles and headings
-- Google Search Console verification
+### 🎨 Teal UI Desktop Environment
+A modern, glass-morphic desktop environment:
+- **Custom Window Manager**: Smooth window management with compositing effects
+- **Built-in Applications**: File Manager, Terminal, Text Editor, Calculator, Settings, and more
+- **Integrated Graphics**: Direct framebuffer access for maximum performance
+- **Mouse & Keyboard Support**: Full input device support with custom drivers
 
-### Performance
-- Minimal dependencies (only Google Fonts)
-- Optimized CSS with CSS variables
-- Fast loading times
-- No JavaScript framework overhead
+### 🛠️ Developer Tools
+Full development environment included:
+- **GCC/G++ Support**: Compile and run C/C++ projects natively
+- **TCC Compiler**: Tiny C Compiler integrated for fast compilation
+- **POSIX-like Environment**: Familiar Unix-style commands and utilities
+- **Standard Toolchain**: Make, linker, and essential build tools
 
-### Accessibility
-- Proper heading hierarchy
-- ARIA labels where needed
-- High contrast ratios
-- Keyboard navigation support
+### 🎮 Entertainment
+- **DOOM**: Yes, it runs DOOM! Classic gaming on a modern OS
+- **Multimedia Support**: Image viewer and media capabilities
 
 ---
 
-## 🎨 Customization
+## 🏗️ Architecture
 
-### Color Scheme
-Colors are defined as CSS variables in `style.css`:
-```css
-:root {
-    --primary: #00d4ff;
-    --accent: #ffeb3b;
-    --bg-dark: #0a0e27;
-    --bg-darker: #1a1f3a;
-    --glass-bg: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
-}
+```
+┌─────────────────────────────────────────┐
+│         User Applications               │
+│  (Shell, File Manager, Calculator...)   │
+└─────────────────┬───────────────────────┘
+                  │ System Calls
+┌─────────────────▼───────────────────────┐
+│          Mithl Kernel (Ring 0)          │
+│  ┌──────────┬──────────┬──────────┐    │
+│  │   VFS    │  Memory  │ Graphics │    │
+│  │ Manager  │ Manager  │  Driver  │    │
+│  └──────────┴──────────┴──────────┘    │
+└─────────────────┬───────────────────────┘
+                  │ Hardware Access
+┌─────────────────▼───────────────────────┐
+│            Hardware Layer               │
+│    (CPU, RAM, Disk, GPU, Devices)      │
+└─────────────────────────────────────────┘
 ```
 
-### Typography
-The site uses the Inter font family. To change:
-1. Update the Google Fonts link in the `<head>` section
-2. Modify the `font-family` in CSS
-
-### Layout
-The grid system uses CSS Grid and Flexbox for responsive layouts. Adjust breakpoints in the media queries section of `style.css`.
+The streamlined architecture ensures minimal overhead and maximum performance.
 
 ---
 
-## 📝 Content Updates
+## 📦 What's Included
 
-### Adding New Features
-1. Edit `features.html`
-2. Add a new card in the appropriate section
-3. Follow the existing HTML structure for consistency
+### System Components
+- **Kernel**: Custom x86 kernel with multiboot2 support
+- **Bootloader**: GRUB2 for reliable booting
+- **Desktop Environment**: Complete GUI with window manager and compositor
+- **Device Drivers**: Keyboard, mouse, VGA, ATA disk, RTC, and more
 
-### Updating Latest News
-1. Edit `index.html`
-2. Modify the "Latest Updates" section
-3. Use the existing badge styles for version tags
+### Applications
+- **System Utilities**: ls, ps, cat, mkdir, cp, mv, and more
+- **GUI Applications**: 
+  - File Manager with icon support
+  - Terminal emulator
+  - Text Editor (Notepad)
+  - Calculator
+  - Settings panel
+  - Task Manager
+  - Dashboard
+  - Image Viewer
+  - Clock
 
-### Modifying Navigation
-Update the navigation in all three HTML files to maintain consistency:
-```html
-<nav>
-    <div class="logo">Mithl-OS</div>
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="features.html">Features</a>
-        <a href="contribute.html">Contribute</a>
-        <a href="https://github.com/DoguparthiAakash/Mithl-OS" target="_blank">GitHub</a>
-    </div>
-</nav>
+### Development Tools
+- **Compilers**: GCC, G++, TCC
+- **Build System**: Make, custom linker
+- **Libraries**: Custom libc implementation
+- **Headers**: Standard C headers and TCC includes
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Linux environment (for building)
+- GCC and G++ compilers
+- Make build system
+- GRUB tools (`grub-mkrescue`)
+- QEMU (for testing)
+
+### Quick Start
+
+**1. Clone the Repository**
+```bash
+git clone https://github.com/DoguparthiAakash/Mithl-OS.git
+cd Mithl-OS
 ```
 
+**2. Build the OS**
+```bash
+make
+```
+
+**3. Create Bootable ISO**
+```bash
+make iso
+```
+
+**4. Run in Emulator**
+```bash
+make run
+```
+
+The OS will boot in QEMU and you'll see the beautiful Teal UI desktop environment!
+
 ---
 
-## 🔗 External Links
+## 🗺️ Roadmap
 
-- **GitHub Repository**: https://github.com/DoguparthiAakash/Mithl-OS
-- **Live Website**: https://doguparthiaakash.github.io/Mithl-OS/ (or your custom domain)
+### ✅ Completed (v0.5)
+- ✅ Stable kernel with improved memory management
+- ✅ Glass Prism UI design system
+- ✅ Full GUI application suite
+- ✅ TCC compiler integration
+- ✅ DOOM game port
+- ✅ Userspace process support
+
+### 🚧 In Progress
+- 🔨 Network stack implementation
+- 🔨 USB driver support
+- 🔨 Audio subsystem
+- 🔨 Multi-core CPU support
+
+### 🔮 Future (Experimental)
+- 🌟 **Project Curiosity**: Optional offline AI assistance for developers
+- 🌟 Advanced window tiling and workspace management
+- 🌟 Package manager for third-party applications
+- 🌟 UEFI boot support
+- 🌟 64-bit kernel transition
 
 ---
 
-## 🤝 Contributing to the Website
+## 🤝 Contributing
 
-We welcome contributions to improve the website! Here's how:
+We're building the future of operating systems, and we need passionate developers, designers, and creators to join us!
 
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/improve-website
-   ```
-3. **Make your changes**
-   - Ensure responsive design is maintained
-   - Test on multiple browsers
-   - Follow the existing design language
-4. **Commit your changes**
-   ```bash
-   git commit -m "Improve website accessibility"
-   ```
-5. **Push and create a Pull Request**
+### Areas We Need Help With
 
-### Website Contribution Guidelines
-- Maintain the Glass Prism design aesthetic
-- Ensure mobile responsiveness
-- Test on Chrome, Firefox, and Safari
-- Optimize images and assets
-- Follow semantic HTML practices
-- Keep CSS organized and commented
+**🛠️ Kernel Development**
+- Memory management optimization
+- Process scheduler improvements
+- Device driver development
+- Filesystem implementations
+
+**🎨 UI/UX Design**
+- Glass Prism theme refinements
+- New application designs
+- Icon and asset creation
+- Animation and transitions
+
+**📚 Documentation**
+- API documentation
+- User guides and tutorials
+- Code comments and explanations
+- Architecture documentation
+
+**🔧 Application Development**
+- New userspace applications
+- Porting existing software
+- Game development
+- Productivity tools
+
+### How to Contribute
+
+**Interested in contributing?** We'd love to hear from you!
+
+📧 **Send your contribution request to**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+
+**Include in your email:**
+- Your name and GitHub username
+- Area of interest (kernel, UI, apps, docs, etc.)
+- Relevant experience or skills
+- What you'd like to work on
+
+We'll get back to you with onboarding information and guidance on where to start!
 
 ---
 
 ## 📄 License
 
-The website content and design are part of the Mithl-OS project. Please refer to the main project LICENSE file for details.
+Mithl-OS is open-source software. Please refer to the LICENSE file in the repository for details.
 
 ---
 
-## 📞 Contact
+## 🔗 Links
 
-For questions or suggestions about the website:
-- Open an issue on GitHub
-- Submit a pull request
-- Contact the maintainers through the repository
+- **Website**: [https://doguparthiaakash.github.io/Mithl-OS/](https://doguparthiaakash.github.io/Mithl-OS/)
+- **GitHub**: [https://github.com/DoguparthiAakash/Mithl-OS](https://github.com/DoguparthiAakash/Mithl-OS)
+- **Contribute**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
 
 ---
 
-*Built with ❤️ for the Mithl-OS community*
+## 🌟 Why Mithl-OS?
+
+In a world dominated by closed-source operating systems and bloated Linux distributions, Mithl-OS offers something different:
+
+- **True Independence**: Not based on Linux or any existing OS
+- **Performance Focused**: Every line of code is optimized for speed
+- **Beautiful Design**: Aesthetics are not an afterthought
+- **Developer Friendly**: Built by developers, for developers
+- **Transparent**: Fully open-source, no hidden telemetry
+- **Educational**: Learn OS development from a real, working system
+
+---
+
+## 💡 Philosophy
+
+> "An operating system should be invisible. It should boot instantly, run efficiently, and get out of your way so you can focus on what matters—your work, your creativity, your projects."
+
+Mithl-OS is built on the principle that software should serve the user, not the other way around. We reject the notion that you must accept bloat, telemetry, and complexity in exchange for functionality.
+
+---
+
+## 🎓 Learn More
+
+Want to understand how Mithl-OS works? Check out:
+- **Architecture Documentation**: See how the kernel, memory manager, and graphics system work together
+- **API Reference**: Learn how to write applications for Mithl-OS
+- **Build System**: Understand the compilation and linking process
+- **Contributing Guide**: Get started with your first contribution
+
+---
+
+*Mithl-OS: Fast. Beautiful. Yours.*
+
+**Built with ❤️ by developers who believe in technological sovereignty**
