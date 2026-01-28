@@ -121,37 +121,55 @@ The streamlined architecture ensures minimal overhead and maximum performance.
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Linux environment (for building)
-- GCC and G++ compilers
-- Make build system
-- GRUB tools (`grub-mkrescue`)
-- QEMU (for testing)
+### Download Latest Release
+
+Mithl-OS releases are available through our public distribution repository:
+
+**📦 Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl-Releases](https://github.com/DoguparthiAakash/Mithl-Releases)
+
+This repository contains:
+- ✅ Latest ISO builds (ready to run)
+- ✅ Release notes and changelogs
+- ✅ Documentation and user guides
+- ✅ Pre-built binaries
 
 ### Quick Start
 
-**1. Clone the Repository**
+**1. Download the Latest ISO**
 ```bash
-git clone https://github.com/DoguparthiAakash/Mithl-OS.git
-cd Mithl-OS
+# Visit the releases page
+https://github.com/DoguparthiAakash/Mithl-Releases/releases
+
+# Or clone the distribution repository
+git clone https://github.com/DoguparthiAakash/Mithl-Releases.git
+cd Mithl-Releases
 ```
 
-**2. Build the OS**
+**2. Run in QEMU (Emulator)**
 ```bash
-make
+qemu-system-x86_64 -cdrom iso/Mithl-latest.iso -m 512M
 ```
 
-**3. Create Bootable ISO**
+**3. Write to USB Drive (Real Hardware)**
 ```bash
-make iso
+# ⚠️ Replace /dev/sdX with your USB device
+sudo dd if=iso/Mithl-latest.iso of=/dev/sdX bs=4M status=progress
+sudo sync
 ```
 
-**4. Run in Emulator**
-```bash
-make run
-```
+The OS will boot and you'll see the beautiful Teal UI desktop environment!
 
-The OS will boot in QEMU and you'll see the beautiful Teal UI desktop environment!
+### For Developers
+
+> **Note**: The main Mithl-OS codebase is maintained in a private repository to ensure code quality and security. 
+
+**Interested in contributing to the source code?** Apply for contributor access through our contribution form on the website or email us at [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev).
+
+Approved contributors will receive:
+- 🔑 Access to the private development repository
+- 📚 Developer documentation and onboarding materials
+- 👥 Invitation to the core development team
+- 🎯 Guidance on where to start contributing
 
 ---
 
@@ -212,17 +230,46 @@ We're building the future of operating systems, and we need passionate developer
 
 ### How to Contribute
 
-**Interested in contributing?** We'd love to hear from you!
+Mithl-OS development happens in a **private repository** to maintain code quality, security, and focused development. We carefully select contributors who are passionate about OS development.
 
-📧 **Send your contribution request to**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+#### 🎯 Application Process
 
-**Include in your email:**
-- Your name and GitHub username
-- Area of interest (kernel, UI, apps, docs, etc.)
-- Relevant experience or skills
-- What you'd like to work on
+**Step 1: Submit Your Application**
 
-We'll get back to you with onboarding information and guidance on where to start!
+Visit our website and fill out the contribution form, or send an email to [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+
+**Required Information:**
+- Full name and email address
+- GitHub username
+- Area of expertise (Kernel, UI/UX, Drivers, Applications, Documentation)
+- Relevant experience and skills
+- What you'd like to contribute
+- Why you're interested in Mithl-OS
+- Links to previous work (GitHub repos, portfolio, etc.)
+
+**Step 2: Review Process**
+
+Our team will review your application within 3-5 business days. We look for:
+- ✅ Relevant technical skills
+- ✅ Passion for systems programming
+- ✅ Alignment with project goals
+- ✅ Previous open-source contributions (preferred but not required)
+
+**Step 3: Onboarding**
+
+Approved contributors receive:
+- 🔑 **Private Repository Access**: Invitation to the main Mithl-OS codebase
+- 📚 **Developer Documentation**: Architecture guides, coding standards, and API references
+- 👥 **Team Invitation**: Join our development team on GitHub
+- 💬 **Communication Channels**: Access to developer discussions and planning
+- 🎯 **First Tasks**: Guided issues to help you get started
+
+#### 📧 Quick Apply
+
+**Email**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)  
+**Subject**: Contribution Application - [Your Area of Interest]
+
+Or use the contribution form on our website: [https://doguparthiaakash.github.io/Mithl/contribute.html](https://doguparthiaakash.github.io/Mithl/contribute.html)
 
 ---
 
@@ -234,9 +281,10 @@ Mithl-OS is open-source software. Please refer to the LICENSE file in the reposi
 
 ## 🔗 Links
 
-- **Website**: [https://doguparthiaakash.github.io/Mithl-OS/](https://doguparthiaakash.github.io/Mithl-OS/)
-- **GitHub**: [https://github.com/DoguparthiAakash/Mithl-OS](https://github.com/DoguparthiAakash/Mithl-OS)
+- **Website**: [https://doguparthiaakash.github.io/Mithl/](https://doguparthiaakash.github.io/Mithl/)
+- **Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl-Releases](https://github.com/DoguparthiAakash/Mithl-Releases)
 - **Contribute**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+- **Contribution Form**: [https://doguparthiaakash.github.io/Mithl/contribute.html](https://doguparthiaakash.github.io/Mithl/contribute.html)
 
 ---
 

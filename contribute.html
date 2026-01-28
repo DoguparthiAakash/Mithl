@@ -17,65 +17,187 @@
                 <a href="index.html">Home</a>
                 <a href="features.html">Features</a>
                 <a href="contribute.html" class="active">Contribute</a>
-                <a href="https://github.com/DoguparthiAakash/Mithl-OS" target="_blank">GitHub</a>
+                <a href="https://github.com/DoguparthiAakash/Mithl-Releases" target="_blank">Downloads</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h1>Build the Future.</h1>
-            <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.2rem;">Mithl-OS is an open-source
-                project building a modern, independent operating system. We need creators, not just consumers.</p>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h1>Join the Development Team</h1>
+            <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.2rem;">
+                Mithl-OS is built by passionate developers who believe in creating something extraordinary.
+                We're looking for talented contributors to join our private development repository.
+            </p>
 
-            <div class="card highlight-card" style="margin-bottom: 2rem;">
-                <h3>🛠 Kernel Hacking</h3>
-                <p>Help us optimize the custom memory manager and scheduler. We are looking for C developers who love
-                    low-level systems programming.</p>
-            </div>
-
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>🎨 UI Engineering</h3>
-                <p>The "Glass Prism" UI is custom-written. Help us implement new widgets, improve the compositor's
-                    efficiency, and create beautiful themes.</p>
-            </div>
-
-            <div class="card" style="margin-bottom: 2rem;">
-                <h3>📦 Porting & Drivers</h3>
-                <p>Help us write drivers for more hardware and port standard Linux utilities to our custom environment.
+            <!-- Important Notice -->
+            <div class="card"
+                style="background: rgba(255, 235, 59, 0.1); border-color: var(--accent); margin-bottom: 3rem;">
+                <h3 style="color: var(--accent);">🔒 Private Repository Model</h3>
+                <p>
+                    To maintain code quality and security, Mithl-OS development happens in a <strong>private
+                        repository</strong>.
+                    We carefully review all contributor applications and grant access to qualified developers who share
+                    our vision.
                 </p>
             </div>
 
+            <!-- Contribution Areas -->
+            <h2>What We're Looking For</h2>
+            <div class="grid" style="margin-bottom: 3rem;">
+                <div class="card highlight-card">
+                    <h3>🛠 Kernel Development</h3>
+                    <p>C programming, memory management, process scheduling, device drivers, and low-level systems
+                        programming.</p>
+                </div>
 
-            <h2>Ready to Contribute?</h2>
-            <div class="card highlight-card" style="margin-top: 2rem; text-align: center;">
-                <h3>📧 Get in Touch</h3>
-                <p style="font-size: 1.1rem; margin: 1.5rem 0;">We'd love to hear from you! Send us an email to get
-                    started.</p>
-                <a href="mailto:contribute@mithl-os.dev" class="btn btn-primary"
-                    style="display: inline-block; margin-top: 1rem;">
-                    Send Contribution Request
+                <div class="card">
+                    <h3>🎨 UI/UX Engineering</h3>
+                    <p>Glass Prism UI refinements, compositor optimization, widget development, and visual design.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📦 Application Development</h3>
+                    <p>Building userspace applications, porting software, and creating productivity tools.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📚 Documentation</h3>
+                    <p>API documentation, user guides, tutorials, and technical writing.</p>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <h2>Contributor Application Form</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                Fill out the form below to apply for access to the Mithl-OS development repository.
+                We'll review your application and get back to you within 3-5 business days.
+            </p>
+
+            <form id="contributionForm" class="card" style="padding: 2rem;">
+                <!-- Personal Information -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="fullName" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Full Name <span style="color: var(--accent);">*</span>
+                    </label>
+                    <input type="text" id="fullName" name="fullName" required
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Email Address <span style="color: var(--accent);">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" required
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="github" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        GitHub Username <span style="color: var(--accent);">*</span>
+                    </label>
+                    <input type="text" id="github" name="github" required placeholder="e.g., johndoe"
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                </div>
+
+                <!-- Area of Interest -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="area" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Primary Area of Interest <span style="color: var(--accent);">*</span>
+                    </label>
+                    <select id="area" name="area" required
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                        <option value="" style="background: #0a0e27;">Select an area...</option>
+                        <option value="kernel" style="background: #0a0e27;">Kernel Development</option>
+                        <option value="ui" style="background: #0a0e27;">UI/UX Engineering</option>
+                        <option value="drivers" style="background: #0a0e27;">Device Drivers</option>
+                        <option value="apps" style="background: #0a0e27;">Application Development</option>
+                        <option value="docs" style="background: #0a0e27;">Documentation</option>
+                        <option value="other" style="background: #0a0e27;">Other</option>
+                    </select>
+                </div>
+
+                <!-- Experience -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="experience"
+                        style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Relevant Experience & Skills <span style="color: var(--accent);">*</span>
+                    </label>
+                    <textarea id="experience" name="experience" required rows="4"
+                        placeholder="Tell us about your programming experience, languages you know, and relevant projects you've worked on..."
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+
+                <!-- Contribution Goals -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="goals" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        What Would You Like to Contribute? <span style="color: var(--accent);">*</span>
+                    </label>
+                    <textarea id="goals" name="goals" required rows="4"
+                        placeholder="Describe what you'd like to work on and how you can help improve Mithl-OS..."
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+
+                <!-- Why Mithl-OS -->
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="motivation"
+                        style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Why Are You Interested in Mithl-OS? <span style="color: var(--accent);">*</span>
+                    </label>
+                    <textarea id="motivation" name="motivation" required rows="3"
+                        placeholder="What excites you about this project?"
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+
+                <!-- Portfolio Links -->
+                <div style="margin-bottom: 2rem;">
+                    <label for="portfolio"
+                        style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #fff;">
+                        Portfolio / Previous Work (Optional)
+                    </label>
+                    <input type="url" id="portfolio" name="portfolio"
+                        placeholder="https://github.com/yourusername/project or your portfolio URL"
+                        style="width: 100%; padding: 0.75rem; background: rgba(255, 255, 255, 0.05); border: 1px solid var(--glass-border); border-radius: 4px; color: #fff; font-family: 'Inter', sans-serif; font-size: 1rem;">
+                    <small style="color: var(--text-muted); display: block; margin-top: 0.5rem;">
+                        Links to GitHub repos, personal website, or other relevant work
+                    </small>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div
+                    style="margin-bottom: 2rem; padding: 1rem; background: rgba(0, 212, 255, 0.05); border: 1px solid rgba(0, 212, 255, 0.2); border-radius: 4px;">
+                    <label style="display: flex; align-items: center; cursor: pointer;">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked
+                            style="margin-right: 0.75rem; width: 18px; height: 18px; cursor: pointer;">
+                        <span style="color: #fff; font-size: 0.95rem;">
+                            📬 Subscribe to Mithl-OS newsletter for updates, release announcements, and development news
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary"
+                    style="width: 100%; padding: 1rem; font-size: 1.1rem; font-weight: 600; cursor: pointer;">
+                    Submit Application
+                </button>
+
+                <p style="color: var(--text-muted); text-align: center; margin-top: 1rem; font-size: 0.9rem;">
+                    We'll review your application and respond within 3-5 business days
+                </p>
+            </form>
+
+            <!-- Alternative Contact -->
+            <div class="card" style="margin-top: 3rem; text-align: center; background: rgba(255, 255, 255, 0.02);">
+                <h3>Prefer Email?</h3>
+                <p style="margin: 1rem 0;">You can also send your application directly to:</p>
+                <a href="mailto:contribute@mithl-os.dev?subject=Contribution Application"
+                    style="color: var(--accent); font-size: 1.2rem; text-decoration: none; font-weight: 600;">
+                    contribute@mithl-os.dev
                 </a>
-                <p style="color: var(--text-muted); margin-top: 1.5rem; font-size: 0.9rem;">
-                    Include your name, GitHub username, area of interest, and what you'd like to work on.
+                <p style="color: var(--text-muted); margin-top: 1rem; font-size: 0.9rem;">
+                    Include all the information from the form above in your email
                 </p>
             </div>
-
-            <h2 style="margin-top: 3rem;">Quick Start</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">Want to explore the codebase first? Clone and
-                build:</p>
-            <pre
-                style="background: #0f172a; padding: 1.5rem; border-radius: 4px; margin-top: 1rem; overflow-x: auto; color: var(--accent); border: 1px solid var(--glass-border); font-family: 'Fira Code', monospace; font-size: 0.9rem;">
-# Clone the repository
-git clone https://github.com/DoguparthiAakash/Mithl-OS.git
-cd Mithl-OS
-
-# Build everything
-make
-
-# Run the simulation
-make run
-            </pre>
         </div>
     </main>
 
@@ -87,6 +209,46 @@ make run
         </p>
     </footer>
 
+    <script>
+        // Form submission handler
+        document.getElementById('contributionForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Collect form data
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                github: document.getElementById('github').value,
+                area: document.getElementById('area').value,
+                experience: document.getElementById('experience').value,
+                goals: document.getElementById('goals').value,
+                motivation: document.getElementById('motivation').value,
+                portfolio: document.getElementById('portfolio').value,
+                newsletter: document.getElementById('newsletter').checked
+            };
+
+            // Create mailto link with form data
+            const subject = encodeURIComponent('Contribution Application - ' + formData.area);
+            const body = encodeURIComponent(
+                `MITHL-OS CONTRIBUTION APPLICATION\n\n` +
+                `Full Name: ${formData.fullName}\n` +
+                `Email: ${formData.email}\n` +
+                `GitHub Username: ${formData.github}\n` +
+                `Area of Interest: ${formData.area}\n\n` +
+                `EXPERIENCE & SKILLS:\n${formData.experience}\n\n` +
+                `CONTRIBUTION GOALS:\n${formData.goals}\n\n` +
+                `MOTIVATION:\n${formData.motivation}\n\n` +
+                `PORTFOLIO/PREVIOUS WORK:\n${formData.portfolio || 'Not provided'}\n\n` +
+                `Newsletter Subscription: ${formData.newsletter ? 'Yes' : 'No'}\n`
+            );
+
+            // Open email client
+            window.location.href = `mailto:contribute@mithl-os.dev?subject=${subject}&body=${body}`;
+
+            // Show confirmation message
+            alert('Your email client will open with your application. Please review and send the email to complete your submission.');
+        });
+    </script>
 </body>
 
 </html>
