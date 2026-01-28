@@ -1,0 +1,493 @@
+:root {
+    --primary: #8b5cf6;
+    /* Violet */
+    --primary-dark: #6d28d9;
+    --accent: #c4b5fd;
+    --bg: #0f172a;
+    /* Slate 900 */
+    --surface: rgba(255, 255, 255, 0.03);
+    --text: #f8fafc;
+    --text-muted: #94a3b8;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.2rem 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #fff;
+}
+
+main {
+    padding-top: 80px;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Prism Background Effect */
+.prism-bg {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+}
+
+/* Professional Button */
+.btn {
+    padding: 1rem 3rem;
+    border-radius: 4px;
+    /* Sharper corners for pro feel */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid var(--glass-border);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.5);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px -10px rgba(139, 92, 246, 0.7);
+}
+
+/* Grid Layouts */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--surface);
+    padding: 3rem 2.5rem;
+    border-radius: 2px;
+    border: 1px solid var(--glass-border);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.highlight-card {
+    border-top: 3px solid var(--primary);
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* ========================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================== */
+
+/* Tablets and smaller desktops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        padding: 3rem 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    /* Hero Section */
+    main {
+        padding-top: 120px;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 70vh;
+        padding: 3rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    .hero div[style*="margin-top"] {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .hero div[style*="margin-top"] .btn {
+        margin-left: 0 !important;
+    }
+
+    /* Container and Grid */
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Cards */
+    .card {
+        padding: 2rem 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+    }
+
+    /* Prism Background */
+    .prism-bg {
+        width: 500px;
+        height: 500px;
+        top: 0;
+        right: -20%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 3rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* Section Headings */
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    /* Updates Section Badges */
+    span[style*="padding: 2px 8px"] {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .card {
+        padding: 1.5rem 1rem;
+    }
+
+    .container {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}
+
+/* ========================================
+   ADDITIONAL MOBILE ENHANCEMENTS
+   ======================================== */
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Increase tap targets for touch devices */
+    .nav-links a {
+        padding: 0.5rem;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        /* Disable hover effects on touch devices */
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
+
+/* Features page responsive styles */
+@media (max-width: 768px) {
+
+    /* Make features page heading responsive */
+    main section h1[style*="font-size: 3.5rem"] {
+        font-size: 2rem !important;
+    }
+
+    main section p[style*="font-size: 1.3rem"] {
+        font-size: 1rem !important;
+        padding: 0 1rem;
+    }
+
+    /* Adjust section margins on mobile */
+    main section[style*="margin-bottom: 6rem"] {
+        margin-bottom: 3rem !important;
+    }
+
+    main section[style*="margin-top: 6rem"] {
+        margin-top: 3rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    main section h1[style*="font-size: 3.5rem"] {
+        font-size: 1.75rem !important;
+    }
+
+    main section p[style*="font-size: 1.3rem"] {
+        font-size: 0.95rem !important;
+    }
+}
+
+/* Contribute page code block responsive */
+@media (max-width: 768px) {
+    pre {
+        font-size: 0.75rem !important;
+        padding: 1rem !important;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+
+    /* Make contribute page heading responsive */
+    main div[style*="max-width: 800px"] h1 {
+        font-size: 2rem;
+    }
+
+    main div[style*="max-width: 800px"] p[style*="font-size: 1.2rem"] {
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    pre {
+        font-size: 0.7rem !important;
+        padding: 0.75rem !important;
+    }
+
+    main div[style*="max-width: 800px"] h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Ensure images and media are responsive */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden;
+}
+
+/* Improve readability on small screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+    }
+}

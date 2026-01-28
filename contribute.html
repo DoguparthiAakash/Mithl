@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute | Mithl-OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mithl-OS</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="contribute.html" class="active">Contribute</a>
+                <a href="https://github.com/DoguparthiAakash/Mithl-OS" target="_blank">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h1>Build the Future.</h1>
+            <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.2rem;">Mithl-OS is an open-source
+                project building a modern, independent operating system. We need creators, not just consumers.</p>
+
+            <div class="card highlight-card" style="margin-bottom: 2rem;">
+                <h3>🛠 Kernel Hacking</h3>
+                <p>Help us optimize the custom memory manager and scheduler. We are looking for C developers who love
+                    low-level systems programming.</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>🎨 UI Engineering</h3>
+                <p>The "Glass Prism" UI is custom-written. Help us implement new widgets, improve the compositor's
+                    efficiency, and create beautiful themes.</p>
+            </div>
+
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>📦 Porting & Drivers</h3>
+                <p>Help us write drivers for more hardware and port standard Linux utilities to our custom environment.
+                </p>
+            </div>
+
+            <h2>How to Build</h2>
+            <pre
+                style="background: #0f172a; padding: 1.5rem; border-radius: 4px; margin-top: 1rem; overflow-x: auto; color: var(--accent); border: 1px solid var(--glass-border); font-family: 'Fira Code', monospace; font-size: 0.9rem;">
+# Clone the repository
+git clone https://github.com/DoguparthiAakash/Mithl-OS.git
+cd Mithl-OS
+
+# Build everything
+make
+
+# Run the simulation
+make run
+            </pre>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mithl-OS Project. Fast. Beautiful. Yours.</p>
+    </footer>
+</body>
+
+</html>

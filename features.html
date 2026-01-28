@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | Mithl-OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Mithl-OS</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="features.html" class="active">Features</a>
+                <a href="contribute.html">Contribute</a>
+                <a href="https://github.com/DoguparthiAakash/Mithl-OS" target="_blank">GitHub</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section style="margin-bottom: 6rem; text-align: center;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 900;">High Performance Architecture</h1>
+            <p style="color: var(--text-muted); font-size: 1.3rem; max-width: 800px; margin: 0 auto;">Built from scratch
+                for speed, control, and zero overhead.</p>
+        </section>
+
+        <div class="grid">
+            <div class="card highlight-card">
+                <h3>⚡ Direct-to-Metal</h3>
+                <p>Our custom Compositor writes directly to the GPU Framebuffer. This innovative pipeline eliminates the
+                    latency found in X11 or Wayland, making it ideal for high-precision creative work and gaming.</p>
+            </div>
+            <div class="card">
+                <h3>🛠 Custom Micro-Kernel</h3>
+                <p>We built our own Kernel/HAL from the ground up. It provides granular control over hardware resources,
+                    ensuring max performance without legacy bloat.</p>
+            </div>
+            <div class="card">
+                <h3>🐧 Unix Compatibility</h3>
+                <p>Don't relearn your workflow. Mithl-OS includes a POSIX-compliant shell and standard GNU tools (GCC,
+                    Make, grep) out of the box.</p>
+            </div>
+            <div class="card">
+                <h3>📦 Standard Toolchain</h3>
+                <p>Developers are first-class citizens. Compile C/C++ projects natively. Since we use standard ELF
+                    binaries, porting existing software is straightforward.</p>
+            </div>
+        </div>
+
+        <section style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--glass-border);">
+            <h2 style="margin-bottom: 2rem; color: var(--accent);">Future Roadmap (Coming Soon)</h2>
+            <div class="grid">
+                <div class="card" style="border-style: dashed; opacity: 0.8;">
+                    <h3>Project Curiosity (Alpha)</h3>
+                    <p>An optional, privacy-focused local intelligence layer. It will eventually provide
+                        context-awareness to help you find files and optimize workflows, entirely offline.</p>
+                </div>
+                <div class="card" style="border-style: dashed; opacity: 0.8;">
+                    <h3>Advanced Tiling</h3>
+                    <p>We are working on a dynamic tiling window manager that automatically arranges your windows based
+                        on your usage patterns.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mithl-OS Project. Fast. Beautiful. Yours.</p>
+    </footer>
+</body>
+
+</html>
