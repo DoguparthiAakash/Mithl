@@ -125,7 +125,7 @@ The streamlined architecture ensures minimal overhead and maximum performance.
 
 Mithl-OS releases are available through our public distribution repository:
 
-**📦 Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl-Releases](https://github.com/DoguparthiAakash/Mithl-Releases)
+**📦 Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl/releases](https://github.com/DoguparthiAakash/Mithl/releases)
 
 This repository contains:
 - ✅ Latest ISO builds (ready to run)
@@ -138,11 +138,11 @@ This repository contains:
 **1. Download the Latest ISO**
 ```bash
 # Visit the releases page
-https://github.com/DoguparthiAakash/Mithl-Releases/releases
+https://github.com/DoguparthiAakash/Mithl/releases
 
 # Or clone the distribution repository
-git clone https://github.com/DoguparthiAakash/Mithl-Releases.git
-cd Mithl-Releases
+git clone https://github.com/DoguparthiAakash/Mithl.git
+cd Mithl
 ```
 
 **2. Run in QEMU (Emulator)**
@@ -163,7 +163,7 @@ The OS will boot and you'll see the beautiful Teal UI desktop environment!
 
 > **Note**: The main Mithl-OS codebase is maintained in a private repository to ensure code quality and security. 
 
-**Interested in contributing to the source code?** Apply for contributor access through our contribution form on the website or email us at [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev).
+**Interested in contributing to the source code?** Apply for contributor access through our contribution form on the website or email us at [doguparthiaakash@gmail.com](mailto:doguparthiaakash@gmail.com).
 
 Approved contributors will receive:
 - 🔑 Access to the private development repository
@@ -236,7 +236,7 @@ Mithl-OS development happens in a **private repository** to maintain code qualit
 
 **Step 1: Submit Your Application**
 
-Visit our website and fill out the contribution form, or send an email to [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+Visit our website and fill out the contribution form, or send an email to [doguparthiaakash@gmail.com](mailto:doguparthiaakash@gmail.com)
 
 **Required Information:**
 - Full name and email address
@@ -266,7 +266,7 @@ Approved contributors receive:
 
 #### 📧 Quick Apply
 
-**Email**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)  
+**Email**: [doguparthiaakash@gmail.com](mailto:doguparthiaakash@gmail.com)  
 **Subject**: Contribution Application - [Your Area of Interest]
 
 Or use the contribution form on our website: [https://doguparthiaakash.github.io/Mithl/contribute.html](https://doguparthiaakash.github.io/Mithl/contribute.html)
@@ -282,8 +282,8 @@ Mithl-OS is open-source software. Please refer to the LICENSE file in the reposi
 ## 🔗 Links
 
 - **Website**: [https://doguparthiaakash.github.io/Mithl/](https://doguparthiaakash.github.io/Mithl/)
-- **Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl-Releases](https://github.com/DoguparthiAakash/Mithl-Releases)
-- **Contribute**: [contribute@mithl-os.dev](mailto:contribute@mithl-os.dev)
+- **Distribution Repository**: [https://github.com/DoguparthiAakash/Mithl/releases](https://github.com/DoguparthiAakash/Mithl/releases)
+- **Contribute**: [doguparthiaakash@gmail.com](mailto:doguparthiaakash@gmail.com)
 - **Contribution Form**: [https://doguparthiaakash.github.io/Mithl/contribute.html](https://doguparthiaakash.github.io/Mithl/contribute.html)
 
 ---
