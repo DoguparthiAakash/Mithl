@@ -52,6 +52,10 @@
 </head>
 
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="prism-bg"></div>
+
     <header>
         <nav>
             <div class="logo">Mithl-OS</div>
@@ -59,50 +63,51 @@
                 <a href="index.html">Home</a>
                 <a href="features.html" class="active">Features</a>
                 <a href="contribute.html">Contribute</a>
-                <a href="https://github.com/DoguparthiAakash/Mithl/releases" target="_blank">Downloads</a>
+                <a href="https://github.com/DoguparthiAakash/Mithl/" target="_blank">Visit GitHub</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
-        <section style="margin-bottom: 6rem; text-align: center;">
-            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 900;">High Performance Architecture</h1>
+        <section class="reveal" style="margin-bottom: 6rem; text-align: center;">
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800; letter-spacing: -0.03em;">High
+                Performance Architecture</h1>
             <p style="color: var(--text-muted); font-size: 1.3rem; max-width: 800px; margin: 0 auto;">Built from scratch
                 for speed, control, and zero overhead.</p>
         </section>
 
         <div class="grid">
-            <div class="card highlight-card">
+            <div class="card reveal highlight-card" style="transition-delay: 0.1s;">
                 <h3>⚡ Direct-to-Metal</h3>
                 <p>Our custom Compositor writes directly to the GPU Framebuffer. This innovative pipeline eliminates the
                     latency found in X11 or Wayland, making it ideal for high-precision creative work and gaming.</p>
             </div>
-            <div class="card">
+            <div class="card reveal" style="transition-delay: 0.2s;">
                 <h3>🛠 Custom Micro-Kernel</h3>
                 <p>We built our own Kernel/HAL from the ground up. It provides granular control over hardware resources,
                     ensuring max performance without legacy bloat.</p>
             </div>
-            <div class="card">
+            <div class="card reveal" style="transition-delay: 0.3s;">
                 <h3>🐧 Unix Compatibility</h3>
                 <p>Don't relearn your workflow. Mithl-OS includes a POSIX-compliant shell and standard GNU tools (GCC,
                     Make, grep) out of the box.</p>
             </div>
-            <div class="card">
+            <div class="card reveal" style="transition-delay: 0.4s;">
                 <h3>📦 Standard Toolchain</h3>
                 <p>Developers are first-class citizens. Compile C/C++ projects natively. Since we use standard ELF
                     binaries, porting existing software is straightforward.</p>
             </div>
         </div>
 
-        <section style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--glass-border);">
+        <section class="reveal" style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--glass-border);">
             <h2 style="margin-bottom: 2rem; color: var(--accent);">Future Roadmap (Coming Soon)</h2>
             <div class="grid">
-                <div class="card" style="border-style: dashed; opacity: 0.8;">
+                <div class="card reveal" style="border-style: dashed; opacity: 0.8;">
                     <h3>Project Curiosity (Alpha)</h3>
                     <p>An optional, privacy-focused local intelligence layer. It will eventually provide
                         context-awareness to help you find files and optimize workflows, entirely offline.</p>
                 </div>
-                <div class="card" style="border-style: dashed; opacity: 0.8;">
+                <div class="card reveal" style="border-style: dashed; opacity: 0.8;">
                     <h3>Advanced Tiling</h3>
                     <p>We are working on a dynamic tiling window manager that automatically arranges your windows based
                         on your usage patterns.</p>
@@ -114,10 +119,44 @@
     <footer>
         <p>&copy; 2025 Mithl-OS Project. Fast. Beautiful. Yours.</p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            Want to contribute? <a href="mailto:doguparthiaakash@gmail.com"
-                style="color: var(--accent); text-decoration: none;">doguparthiaakash@gmail.com</a>
+            Want to contribute? <a href="mailto:doguparthiaakash@gmail.com">doguparthiaakash@gmail.com</a>
         </p>
     </footer>
+
+    <script>
+        // Custom Cursor
+        const dot = document.querySelector('.cursor-dot');
+        const outline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            dot.style.transform = `translate(${posX - 4}px, ${posY - 4}px)`;
+            outline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Hover effect for links and buttons
+        const hoverTargets = document.querySelectorAll('a, button, .card, input, select, textarea');
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+            target.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+        });
+
+        // Scroll Reveal
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>

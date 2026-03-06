@@ -48,6 +48,10 @@
 </head>
 
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div class="prism-bg"></div>
+
     <header>
         <nav>
             <div class="logo">Mithl-OS</div>
@@ -55,13 +59,13 @@
                 <a href="index.html">Home</a>
                 <a href="features.html">Features</a>
                 <a href="contribute.html" class="active">Contribute</a>
-                <a href="https://github.com/DoguparthiAakash/Mithl/releases" target="_blank">Downloads</a>
+                <a href="https://github.com/DoguparthiAakash/Mithl/" target="_blank">Visit GitHub</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
-        <div style="max-width: 900px; margin: 0 auto;">
+        <div class="reveal" style="max-width: 900px; margin: 0 auto;">
             <h1>Join the Development Team</h1>
             <p style="color: var(--text-muted); margin-bottom: 3rem; font-size: 1.2rem;">
                 Mithl-OS is built by passionate developers who believe in creating something extraordinary.
@@ -248,6 +252,39 @@
     </footer>
 
     <script>
+        // Custom Cursor
+        const dot = document.querySelector('.cursor-dot');
+        const outline = document.querySelector('.cursor-outline');
+
+        window.addEventListener('mousemove', (e) => {
+            const posX = e.clientX;
+            const posY = e.clientY;
+            dot.style.transform = `translate(${posX - 4}px, ${posY - 4}px)`;
+            outline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Hover effect for links and buttons
+        const hoverTargets = document.querySelectorAll('a, button, .card, input, select, textarea');
+        hoverTargets.forEach(target => {
+            target.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+            target.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+        });
+
+        // Scroll Reveal
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
         // Form submission handler
         document.getElementById('contributionForm').addEventListener('submit', function (e) {
             e.preventDefault();
