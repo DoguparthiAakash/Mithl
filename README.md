@@ -2,9 +2,8 @@
 
 <div align="center">
 
-<h1 align="center">
-  <img src="OSLogo.png" height="85" style="vertical-align: middle; margin-bottom: 10px;"> Mithl-OS
-</h1>
+<h1 align="center"><img src="OSLogo.png" height="60" style="vertical-align: middle;"> Mithl-OS</h1>
+
 ### The Modern Operating System for Creators
 
 ✨ **Fast. Beautiful. Yours.** ✨

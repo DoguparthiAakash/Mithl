@@ -1,7 +1,5 @@
 <div align="center">
-  <h1 align="center">
-    <img src="OSLogo.png" height="85" style="vertical-align: middle; margin-bottom: 10px;"> Repository Architecture & Restructuring
-  </h1>
+  <h1 align="center"><img src="OSLogo.png" height="60" style="vertical-align: middle;"> Repository Architecture & Restructuring</h1>
 </div>
 
 Mithl-OS has transitioned to a **Dual-Repository Model**. This strategic move ensures elite code quality, security, and a professional development environment while maintaining seamless accessibility for end-users.
