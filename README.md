@@ -5,9 +5,9 @@
 
 ✨ **Fast. Beautiful. Yours.** ✨
 
-**Mithl-OS** is a high-performance, independent operating system built from scratch with a singular vision: **Speed, Aesthetics, and Control**. Unlike traditional operating systems that carry decades of legacy code, Mithl-OS is designed from the ground up to be your reliable daily driver for creative work and development.
-
-We believe an operating system should be **invisible**—it should get out of your way, boot instantly, run efficiently, and provide a distraction-free environment for you to build *your* projects.
+[![Status](https://img.shields.io/badge/Status-Active%20Development-00d4ff?style=for-the-badge&logo=rocket)](https://github.com/DoguparthiAakash/Mithl/)
+[![License](https://img.shields.io/badge/License-Open%20Source-ffeb3b?style=for-the-badge)](https://github.com/DoguparthiAakash/Mithl/)
+[![Web](https://img.shields.io/badge/Website-Live-5e5ce6?style=for-the-badge)](https://doguparthiaakash.github.io/Mithl/)
 
 ---
 
