@@ -1,8 +1,9 @@
 <div align="center">
 
+<div align="center">
+
 <h1 align="center">
-  <img src="OSLogo.png" height="60" align="middle">
-  Mithl-OS
+  <img src="OSLogo.png" height="85" style="vertical-align: middle; margin-bottom: 10px;"> Mithl-OS
 </h1>
 ### The Modern Operating System for Creators
 
@@ -109,25 +110,17 @@ mindmap
 
 ## 🚀 Getting Started
 
-### 📦 Download Latest Release
-Releases are hosted on our dedicated distribution portal:
+### 🛠️ Developer Access
+Mithl-OS is currently in active development. We are looking for kernel hackers, UI visionaries, and documentation artists to help build the future of operating systems.
 
-**[Visit Releases Page](https://github.com/DoguparthiAakash/Mithl/releases)**
+> [!NOTE]
+> Approved contributors get access to 🔑 Private Source Code, 📚 Internal Docs, and 👥 Core Dev Team.
 
-> [!IMPORTANT]
-> Always use the latest ISO for the best experience. Previous versions may lack critical security and performance updates.
+**[Apply to Contribute](https://doguparthiaakash.github.io/Mithl/contribute.html)**
 
-### 🛠️ Quick Boot (QEMU)
-```bash
-# Launch Mithl-OS instantly
-qemu-system-x86_64 -cdrom iso/Mithl-latest.iso -m 512M
-```
-
-### 💾 Flash to Hardware
-```bash
-# ⚠️ CAUTION: Replace /dev/sdX with your actual USB device
-sudo dd if=iso/Mithl-latest.iso of=/dev/sdX bs=4M status=progress && sync
-```
+### 📽️ Quick Demo
+Check out our website for the latest visual reveals and architecture updates:
+**[View Mithl-OS Website](https://doguparthiaakash.github.io/Mithl/)**
 
 ---
 

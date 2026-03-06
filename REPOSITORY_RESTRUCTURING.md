@@ -1,7 +1,6 @@
 <div align="center">
   <h1 align="center">
-    <img src="OSLogo.png" height="60" align="middle">
-    Repository Architecture & Restructuring
+    <img src="OSLogo.png" height="85" style="vertical-align: middle; margin-bottom: 10px;"> Repository Architecture & Restructuring
   </h1>
 </div>
 
@@ -22,14 +21,14 @@ flowchart LR
 
     subgraph Public ["🌍 Public Distribution Repo"]
         direction TB
-        ISO["💿 ISO Images<br/>(Releases)"]
-        Notes["📝 Release Notes"]
+        ReleasePrep["🏗️ Beta Preparation"]
+        Notes["📝 Project Updates"]
         Docs["📚 User Documentation"]
     end
 
-    Private -- "✅ Build Stable" --> ISO
+    Private -- "✅ Build Stable" --> ReleasePrep
     Private -- "📄 Extract" --> Notes
-    Public -- "📥 User Access" --> EndUser["👤 OS User"]
+    Public -- "📥 Project Info" --> EndUser["👤 OS User"]
     EndUser -- "📝 Application" --> Private
 ```
 
@@ -39,7 +38,7 @@ flowchart LR
 
 | Feature | 🔒 Private Dev Repo | 🌍 Public Dist Repo |
 | :--- | :--- | :--- |
-| **URL** | `https://github.com/.../Mithl` | `.../Mithl/releases` |
+| **URL** | `https://github.com/.../Mithl` | `https://github.com/.../Mithl` |
 | **Access** | 🔑 Approved Contributors | 👥 Everyone |
 | **Primary Content** | Full Source Code & Toolchain | Pre-built ISOs & User Docs |
 | **Visibility** | Hidden from Public | Fully Public |
@@ -65,14 +64,14 @@ stepper
 
 ---
 
-## 📦 User Workflow (Quick Start)
+## 📦 User Journey (Stay Tuned)
 
-For those who want to experience Mithl-OS immediately:
+Mithl-OS is currently in its elite development phase. Here is how you can stay involved:
 
-1.  **Visit** the [Public Releases](https://github.com/DoguparthiAakash/Mithl/releases).
-2.  **Download** the latest timestamped `Mithl-latest.iso`.
-3.  **Boot** in QEMU or flash to a USB drive.
-4.  **Enjoy** the distraction-free workspace!
+1.  **Follow** the project on [GitHub](https://github.com/DoguparthiAakash/Mithl/) for progress updates.
+2.  **Explore** the [Features](https://doguparthiaakash.github.io/Mithl/features.html) page to see what's being built.
+3.  **Apply** to join the core team if you have systems programming or design expertise.
+4.  **Watch** for the first public beta announcement!
 
 ---
 
