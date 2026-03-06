@@ -1,7 +1,6 @@
 :root {
     --primary: #5e5ce6;
-    /* Apple-inspired Blue/Indigo */
-    --accent: #64d2ff;
+    --accent: #00d4ff;
     --bg: #000000;
     --surface: rgba(28, 28, 28, 0.4);
     --text: #ffffff;
@@ -9,6 +8,17 @@
     --glass-border: rgba(255, 255, 255, 0.12);
     --dock-bg: rgba(28, 28, 30, 0.6);
     --font-main: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f5f5f7;
+        --surface: rgba(255, 255, 255, 0.45);
+        --text: #1d1d1f;
+        --text-muted: #86868b;
+        --glass-border: rgba(0, 0, 0, 0.08);
+        --dock-bg: rgba(255, 255, 255, 0.75);
+    }
 }
 
 * {
@@ -44,6 +54,16 @@ body {
     pointer-events: none;
     transform: translate(-50%, -50%);
     will-change: transform;
+}
+
+@media (prefers-color-scheme: light) {
+    .cursor-dot {
+        background-color: #000;
+    }
+
+    .cursor-outline {
+        border-color: rgba(0, 0, 0, 0.3);
+    }
 }
 
 .cursor-outline {
@@ -101,7 +121,7 @@ nav {
     font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: -0.5px;
-    color: #fff;
+    color: var(--text);
     padding-right: 1.5rem;
     border-right: 1px solid var(--glass-border);
 }
@@ -121,7 +141,7 @@ nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #fff;
+    color: var(--text);
     transform: scale(1.1) translateY(-2px);
 }
 
@@ -154,6 +174,14 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
+@media (prefers-color-scheme: light) {
+    .hero h1 {
+        background: linear-gradient(180deg, #1d1d1f 0%, #434345 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
 .hero p {
     font-size: clamp(1.1rem, 3vw, 1.5rem);
     color: var(--text-muted);
@@ -178,23 +206,23 @@ main {
 }
 
 .btn-primary {
-    background: #fff;
-    color: #000;
+    background: var(--text);
+    color: var(--bg);
     border: none;
 }
 
 .btn-primary:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .btn:not(.btn-primary) {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    background: rgba(128, 128, 128, 0.1);
+    color: var(--text);
 }
 
 .btn:not(.btn-primary):hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(128, 128, 128, 0.2);
     transform: translateY(-5px);
 }
 
@@ -222,9 +250,9 @@ main {
 
 .card:hover {
     transform: translateY(-15px);
-    border-color: rgba(255, 255, 255, 0.3);
-    background: rgba(44, 44, 46, 0.5);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+    border-color: var(--primary);
+    background: rgba(128, 128, 128, 0.08);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -256,10 +284,10 @@ select,
 textarea {
     width: 100%;
     padding: 1.2rem;
-    background: rgba(255, 255, 255, 0.05) !important;
+    background: rgba(128, 128, 128, 0.05) !important;
     border: 1px solid var(--glass-border) !important;
     border-radius: 14px !important;
-    color: #fff !important;
+    color: var(--text) !important;
     font-family: var(--font-main) !important;
     font-size: 1rem !important;
     margin-top: 0.5rem;
@@ -309,6 +337,14 @@ label {
     will-change: filter;
     transform: translateZ(0);
     /* Hardware acceleration */
+}
+
+@media (prefers-color-scheme: light) {
+    .prism-bg {
+        background:
+            radial-gradient(circle at 80% 20%, rgba(94, 92, 230, 0.08) 0%, transparent 40%),
+            radial-gradient(circle at 20% 80%, rgba(100, 210, 255, 0.06) 0%, transparent 40%);
+    }
 }
 
 footer {
